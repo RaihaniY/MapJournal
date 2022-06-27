@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C746E59F27E3A3D400DA2E99 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746E59E27E3A3D400DA2E99 /* JournalEntry.swift */; };
+		C746E5A127E3A97F00DA2E99 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746E5A027E3A97F00DA2E99 /* JournalViewController.swift */; };
+		C746E5A327E3AFC900DA2E99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746E5A227E3AFC900DA2E99 /* DetailViewController.swift */; };
+		C746E5A527E3B36200DA2E99 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746E5A427E3B36200DA2E99 /* JournalTableViewController.swift */; };
 		C77E7D6327D6B507006AF424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77E7D6227D6B507006AF424 /* AppDelegate.swift */; };
 		C77E7D6527D6B507006AF424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77E7D6427D6B507006AF424 /* SceneDelegate.swift */; };
 		C77E7D6727D6B507006AF424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77E7D6627D6B507006AF424 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C746E59E27E3A3D400DA2E99 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		C746E5A027E3A97F00DA2E99 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		C746E5A227E3AFC900DA2E99 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C746E5A427E3B36200DA2E99 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		C77E7D5F27D6B507006AF424 /* mapJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77E7D6227D6B507006AF424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C77E7D6427D6B507006AF424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,10 +107,14 @@
 		C77E7D6127D6B507006AF424 /* mapJournal */ = {
 			isa = PBXGroup;
 			children = (
+				C746E5A227E3AFC900DA2E99 /* DetailViewController.swift */,
+				C746E5A027E3A97F00DA2E99 /* JournalViewController.swift */,
+				C746E59E27E3A3D400DA2E99 /* JournalEntry.swift */,
 				C77E7D6227D6B507006AF424 /* AppDelegate.swift */,
 				C77E7D6427D6B507006AF424 /* SceneDelegate.swift */,
 				C77E7D6627D6B507006AF424 /* ViewController.swift */,
 				C77E7D6827D6B507006AF424 /* Main.storyboard */,
+				C746E5A427E3B36200DA2E99 /* JournalTableViewController.swift */,
 				C77E7D6B27D6B508006AF424 /* Assets.xcassets */,
 				C77E7D6D27D6B508006AF424 /* LaunchScreen.storyboard */,
 				C77E7D7027D6B508006AF424 /* Info.plist */,
@@ -260,7 +272,11 @@
 			files = (
 				C77E7D6727D6B507006AF424 /* ViewController.swift in Sources */,
 				C77E7D6327D6B507006AF424 /* AppDelegate.swift in Sources */,
+				C746E59F27E3A3D400DA2E99 /* JournalEntry.swift in Sources */,
+				C746E5A527E3B36200DA2E99 /* JournalTableViewController.swift in Sources */,
+				C746E5A327E3AFC900DA2E99 /* DetailViewController.swift in Sources */,
 				C77E7D6527D6B507006AF424 /* SceneDelegate.swift in Sources */,
+				C746E5A127E3A97F00DA2E99 /* JournalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
+
+
 
 class JournalTableViewController: UITableViewController {
 
@@ -20,26 +24,39 @@ class JournalTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    
 
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return journals.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "basic", for: indexPath)
 
         // Configure the cell...
-
+        cell.textLabel?.text = journals[indexPath.row].titleOfEntry
+        
         return cell
     }
-    */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if let detailViewController = segue.destination as? DetailViewController{
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                detailViewController.journal = journals[indexPath.row]
+            }
+        }
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

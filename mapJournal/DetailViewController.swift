@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class DetailViewController: UIViewController {
 
@@ -13,6 +15,25 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    var journal: JournalEntry?
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var JournalText: UITextView!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let j = journal {
+            titleLabel.text = j.titleOfEntry
+            dateLabel.text = j.date.formatted()
+            var annotation = MKPointAnnotation()
+            annotation.coordinate = j.location
+            map.addAnnotation(annotation)
+            JournalText.text = j.journalText
+        }
     }
     
 
